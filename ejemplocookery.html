@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escuela de Cocina para Niños</title>
+  <style>
+    /* Estilos generales y de tipografía */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      width: 150px;
+      height: auto;
+    }
+    section {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    p {
+      margin: 10px 0;
+    }
+    /* Accordion de cursos y talleres */
+    .accordion {
+      border-top: 1px solid #ddd;
+    }
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+    .accordion-header {
+      background-color: #a8e6cf; /* color menta */
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+    .accordion-header:hover {
+      background-color: #94d7b1;
+    }
+    .accordion-content {
+      padding: 0 15px 15px;
+      display: none;
+    }
+    /* Formulario */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input, form select, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    form button {
+      padding: 12px;
+      background-color: #a8e6cf;
+      color: #333;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #94d7b1;
+    }
+    .confirmation {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      display: none;
+    }
+    /* Responsividad */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      header img {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Imagen cargada desde GitHub -->
+    <img src="https://raw.githubusercontent.com/Per-Arredondo/Clinica_medica/main/logo.png" alt="Logo de la Escuela de Cocina">
+    <h1>Escuela de Cocina para Niños y Adultos</h1>
+  </header>
+  
+  <div class="container">
+    <!-- Sección Institucional -->
+    <section id="institucional">
+      <h2>¿Quiénes somos?</h2>
+      <p>Somos una escuela de cocina para niños y adultos, donde el aprendizaje y la diversión se combinan para crear experiencias gastronómicas únicas y saludables.</p>
+      <h2>Misión</h2>
+      <p>Inspirar y educar, fomentando el amor por la cocina saludable y creativa, proporcionando un ambiente seguro y divertido donde los niños exploren, experimenten y aprendan habilidades culinarias fundamentales mientras desarrollan una apreciación por los alimentos frescos y nutritivos.</p>
+      <h2>Visión</h2>
+      <p>Aspiramos a ser líderes en la educación culinaria infantil, siendo reconocidos por nuestra excelencia en la enseñanza de habilidades culinarias, nutrición y hábitos alimenticios saludables, logrando ser un espacio de creatividad, aprendizaje y diversión culinaria para niños de todas las edades y habilidades, promoviendo una cultura de bienestar y alimentación consciente desde una edad temprana.</p>
+      <h2>Valores</h2>
+      <p>Creatividad, Respeto por los alimentos, Salud y bienestar, Inclusión, Aprendizaje activo, Seguridad alimentaria, Trabajo en equipo, Responsabilidad, Empoderamiento, Divertimento.</p>
+    </section>
+
+    <!-- Sección de Cursos y Talleres con Acordeón -->
+    <section id="cursos">
+      <h2>Cursos y Talleres</h2>
+      <div class="accordion">
+        <!-- Cada item del acordeón -->
+        <div class="accordion-item">
+          <div class="accordion-header">Viernes de consejo</div>
+          <div class="accordion-content">
+            <p>Descripción del curso "Viernes de consejo". Explora ideas, aprende técnicas y comparte tus experiencias culinarias.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Clase de mujeres</div>
+          <div class="accordion-content">
+            <p>Un espacio dedicado a compartir y aprender recetas que empoderan y conectan a mujeres a través de la cocina.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Clases por la tarde</div>
+          <div class="accordion-content">
+            <p>Clases dinámicas en horarios vespertinos para que toda la familia disfrute aprendiendo y cocinando en conjunto.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Clase de parejas</div>
+          <div class="accordion-content">
+            <p>Un curso pensado para parejas que deseen fortalecer su vínculo a través de la creatividad y el arte culinario.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Evento privado</div>
+          <div class="accordion-content">
+            <p>Organiza eventos exclusivos y personalizados para celebrar momentos especiales con la magia de la cocina.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario para agendar citas -->
+    <section id="formulario">
+      <h2>Agendar tu clase</h2>
+      <form id="bookingForm">
+        <label for="nombre">Nombre completo del participante:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+          <option value="">Seleccione...</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Otro">Otro</option>
+        </select>
+        
+        <label for="especialidad">Especialidad:</label>
+        <select id="especialidad" name="especialidad" required>
+          <option value="">Seleccione...</option>
+          <option value="Viernes de consejo">Viernes de consejo</option>
+          <option value="Clase de mujeres">Clase de mujeres</option>
+          <option value="Clases por la tarde">Clases por la tarde</option>
+          <option value="Clase de parejas">Clase de parejas</option>
+          <option value="Evento privado">Evento privado</option>
+        </select>
+        
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+        
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+        
+        <button type="submit">Agendar Clase</button>
+        <div class="confirmation" id="confirmation">
+          ✅ Gracias, tu clase ha sido agendada. ⏳ Redirigiendo al inicio... 🎉 Te contactaremos pronto.
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    // Función para el acordeón de cursos y talleres
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        // Alterna la visibilidad del contenido siguiente
+        const content = header.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+
+    // Manejo del formulario
+    const form = document.getElementById('bookingForm');
+    const confirmationDiv = document.getElementById('confirmation');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
+      // Realiza la solicitud vía fetch a la URL de Google Sheets
+      fetch('https://script.google.com/macros/s/AKfycbwqkIOnrvtAlrmEtrGKkGku2HvRWF5fkBIkEIxtMuOcVLEMJiTs28IfXWPCAhge6m1Kow/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(() => {
+        // Muestra mensaje de confirmación
+        confirmationDiv.style.display = 'block';
+
+        // Limpia el formulario
+        form.reset();
+
+        // Desplaza hacia el inicio suavemente
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Oculta el mensaje después de 5 segundos
+        setTimeout(() => {
+          confirmationDiv.style.display = 'none';
+        }, 5000);
+      })
+      .catch(err => {
+        console.error('Error en el envío:', err);
+        // Opcional: mostrar algún mensaje de error para el usuario
+      });
+    });
+  </script>
+</body>
+</html>
